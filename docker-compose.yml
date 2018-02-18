@@ -6,7 +6,7 @@ services:
     container_name: django-gunicorn
     restart: always
     env_file:
-      - production.env
+      - django.env
     ports:
       - "8000:8000"
     command:

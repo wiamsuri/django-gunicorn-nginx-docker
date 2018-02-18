@@ -12,7 +12,7 @@ sudo service docker start
 sudo pip install docker-compose
 ```
 
-In the root level of this repository, create a file named `production.env` and add environment variables. For example:
+In the root level of this repository, create a file named `django.env` and add environment variables. For example:
 ```
 MYSITE_SECRET_KEY= put your django app secret key here
 DEBUG=False
