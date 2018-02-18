@@ -6,6 +6,9 @@ __pycache__/
 # Django
 *.sqlite3
 
+# Docker
+production.env
+
 # C extensions
 *.so
 
