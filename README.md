@@ -18,7 +18,7 @@ MYSITE_SECRET_KEY= put your django app secret key here
 DEBUG=False
 ```
 
-Run docker compose commands
+Build code with docker compose
 ```
 docker-compose build
 ```
