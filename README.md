@@ -1,6 +1,9 @@
 # Ready-To-Deploy Django, gunicorn, NGINX, Docker Application
 Getting a Django 2.0 app up in no time. In this project, gunicorn is used as a WSGI. NGINX is used as a reverse proxy server.
 
+## Premise
+I have seen one too many Dockerfile with unreadable code. Many code base out there have Docker setup so elaborately that it is unmodifiable. Here, I try to simplify Dockerfile and Docker Compose file as much as possible, so that more than one developer in a team will understand how it works.
+
 ## Getting Started
 Here is a script to install docker and docker-compose. After running these commands, exit from ssh and reconnect to the instance. This can be used in AWS Launch Config
 ```

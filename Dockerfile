@@ -1,6 +1,5 @@
 FROM python:3.6
 
-ENV APP_USER django
 ENV APP_ROOT /src
 ENV CONFIG_ROOT /config
 
