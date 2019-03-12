@@ -10,7 +10,7 @@ Here is a script to install docker and docker-compose. After running these comma
 #!/bin/bash
 sudo yum -y update
 sudo yum install -y docker
-sudo usermod -a -G docker ec2-user
+sudo usermod -a -G docker $(whoami)
 sudo service docker start
 sudo pip install docker-compose
 ```
@@ -20,14 +20,14 @@ sudo apt update
 sudo apt install -y docker.io
 sudo usermod -a -G docker $(whoami)
 sudo service docker start
-sudo curl -L https://github.com/docker/compose/releases/download/1.20.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 In the root level of this repository, create a file named `django.env` and add environment variables. For example:
 ```
 MYSITE_SECRET_KEY= put your django app secret key here
-DEBUG=False
+DEBUG=True
 ```
 
 Build code with docker compose
