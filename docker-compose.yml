@@ -13,7 +13,7 @@ services:
       "gunicorn --workers=2 --bind=0.0.0.0:8000 mysite.wsgi:application"
 
   nginx:
-    image: nginx:1.14
+    image: nginx:1.17
     container_name: ngx
     ports:
       - "80:80"
