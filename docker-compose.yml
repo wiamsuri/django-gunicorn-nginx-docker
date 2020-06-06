@@ -19,5 +19,6 @@ services:
       - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      - ./app/blog/static:/src/blog/static
     depends_on:
       - app
