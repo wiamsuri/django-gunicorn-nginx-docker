@@ -1,0 +1,92 @@
+
+{% load static %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+
+Template 2091 Ziggy
+
+http://www.tooplate.com/view/2091-ziggy
+
+-->
+        <title> My personal blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" >
+    <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.css' %}" type="text/css" >
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}" >
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'%}"></script>
+    </head>
+    <body>
+
+
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-content">
+                  <h3>My weblog</h3>
+                  <div class="line-dec"></div>
+                  <span>All about Experiences </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                  {% block content %}
+
+
+                  <div class="container">
+                      <div class="row">
+                          <!-- Blog Entries Column -->
+                          <div class="col-md-8 mt-3 left">
+                              {% for post in post_list %}
+                              <div class="card mb-4">
+                                  <div class="card-body">
+                                      <h2 class="card-title">{{ post.title }}</h2>
+                                      <p class="card-text text-muted h6">{{ post.Author }} | {{ post.created_on}} </p>
+                                      <p class="card-text">{{post.content|slice:":90000000" }}</p>
+                                  </div>
+                              </div>
+                              {% endfor %}
+                          </div>
+                      </div>
+                  </div>
+                  {%endblock%}
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                
+                <p>Parham Zardoshti &copy; Powered By Django
+
+                        |   Design  By Heart and Brain :) </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src="{% static "js/vendor/jquery-1.11.2.min.js"%}"><\/script>")</script>
+        <script src="{% static 'js/vendor/bootstrap.min.js'%}"></script>
+
+
+        <script src="{% static "js/plugins.js"%}"></script>
+        <script src="{% "js/main.js5"}"></script>
+
+
+    </body>
+</html>
