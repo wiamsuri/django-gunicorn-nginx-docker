@@ -6,8 +6,12 @@ urlpatterns = [
 
     path('', views.index, name='home'),
 <<<<<<< HEAD
+<<<<<<< HEAD
     #path('', views.jobViews, name='jobs'),
     path('portfolilio-page.html', views.jobViews, name='sec'),
+=======
+    path('', views.jobViews, name='jobs'),
+>>>>>>> 5adaffae9be96c57bd9b313ffc568b5b0f9be402
 =======
     path('', views.jobViews, name='jobs'),
 >>>>>>> 5adaffae9be96c57bd9b313ffc568b5b0f9be402

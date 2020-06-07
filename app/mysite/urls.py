@@ -18,8 +18,12 @@ from django.urls import path  , include
 
 urlpatterns = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     path('' , include('blog.urls')),
     path('portfolilio-page.html', include('blog.urls')),
+=======
+    path('blog/' , include('blog.urls')),
+>>>>>>> 5adaffae9be96c57bd9b313ffc568b5b0f9be402
 =======
     path('blog/' , include('blog.urls')),
 >>>>>>> 5adaffae9be96c57bd9b313ffc568b5b0f9be402
