@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    build: .
+    build: app
     container_name: django-gunicorn
     restart: always
     env_file:
