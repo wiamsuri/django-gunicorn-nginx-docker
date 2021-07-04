@@ -1,3 +1,6 @@
 Django==3.1
 gunicorn==20.0.4
 pytz==2020.1
+watchdog==2.1.3
+PyYAML==5.4.1
+argh==0.26.2
