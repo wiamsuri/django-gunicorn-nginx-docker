@@ -14,7 +14,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
 
   nginx:
-    image: nginx:1.17
+    image: nginx:1.23-alpine
     container_name: ngx
     ports:
       - "80:80"
